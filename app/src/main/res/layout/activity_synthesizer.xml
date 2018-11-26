@@ -7,9 +7,10 @@
     tools:context=".SynthesizerActivity">
 
     <TextView
+android:id ="@+id/BackgroundText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@+string/teststring"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,13 +20,16 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onButton1Click"
         android:text="@string/button1"
-        app:layout_constraintBottom_toTopOf="@+id/button2" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onButton2Click"
         android:text="@string/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
