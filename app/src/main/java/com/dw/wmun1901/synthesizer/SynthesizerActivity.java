@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import jm.music.data.Note;
+import jm.util.Play;
 
     public class SynthesizerActivity extends AppCompatActivity {
         private final int WHOLE_NOTE = 20;
@@ -110,7 +112,6 @@ import android.widget.TextView;
             button1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
                     Log.i(TAG, "Button 1 Clicked");
                     Ammount1[0]++;
                     BackgroundText.setText("Button 1 Clicked " + Ammount1[0] + "times");
