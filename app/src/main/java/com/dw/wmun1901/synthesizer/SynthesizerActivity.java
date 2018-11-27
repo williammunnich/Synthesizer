@@ -108,6 +108,8 @@ SynthesizerActivity.class.getName();
                 Log.i(TAG, "Button 1 Clicked");
                 Ammount1[0]++;
                 BackgroundText.setText("Button 1 Clicked " + Ammount1[0] + "times");
+                mpA.seekTo(0);
+                Log.e("SynthesizerActivity", "Button 1 clicked");
                 mpA.start();
 
             }
@@ -118,6 +120,8 @@ SynthesizerActivity.class.getName();
                 Log.i(TAG, "Button 2 Clicked");
                 Ammount2[0]++;
                 BackgroundText.setText("Button 2 Clicked " + Ammount2[0] + "times");
+                mpBb.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpBb.start();
 
             }
@@ -127,6 +131,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpB.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpB.start();
             }
         });
@@ -135,6 +141,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpC.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpC.start();
             }
         });
@@ -143,6 +151,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpCsharp.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpCsharp.start();
             }
         });
@@ -151,6 +161,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpD.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpD.start();
             }
         });
@@ -159,6 +171,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpDsharp.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpDsharp.start();
             }
         });
@@ -167,6 +181,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpE.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpE.start();
             }
         });
@@ -175,6 +191,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpF.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpF.start();
             }
         });
@@ -183,6 +201,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpFsharp.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpFsharp.start();
             }
         });
@@ -191,6 +211,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mpG.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mpG.start();
             }
         });
@@ -199,6 +221,8 @@ SynthesizerActivity.class.getName();
                 public void onClick(View v) {
                     Log.i(TAG, "Button Clicked");
                     BackgroundText.setText("Button  Clicked ");
+                    mpGsharp.seekTo(0);
+                    Log.e("SynthesizerActivity", "Button  clicked");
                     mpGsharp.start();
                 }
         });
@@ -207,6 +231,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mphighE.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mphighE.start();
             }
         });
@@ -215,6 +241,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mphighF.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mphighF.start();
             }
         });
@@ -223,6 +251,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mphighFsharp.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mphighFsharp.start();
             }
         });
@@ -231,6 +261,8 @@ SynthesizerActivity.class.getName();
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
                 BackgroundText.setText("Button  Clicked ");
+                mphighFsharp.seekTo(0);
+                Log.e("SynthesizerActivity", "Button  clicked");
                 mphighG.start();
             }
         });
