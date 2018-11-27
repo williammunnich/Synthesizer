@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
     public class SynthesizerActivity extends AppCompatActivity {
-        private final int WHOLE_NOTE = 20;
+        private final int WHOLE_NOTE = 100;
         private static final String TAG =
                 SynthesizerActivity.class.getName();
         private Button button1;
@@ -33,6 +33,7 @@ import android.widget.TextView;
         private Button button15;
         private Button button16;
         private Button button17;
+        private Button buttonM;
 
         private TextView BackgroundText; //BackgroundText
         private MediaPlayer mpA;
@@ -82,6 +83,7 @@ import android.widget.TextView;
             button15 = (Button) findViewById(R.id.button15);
             button16 = (Button) findViewById(R.id.button16);
             button17 = (Button) findViewById(R.id.button17);
+            buttonM = (Button) findViewById(R.id.buttonM);
 
             mpA = MediaPlayer.create(this, R.raw.scalea);
             mpB = MediaPlayer.create(this, R.raw.scaleb);
@@ -334,6 +336,76 @@ import android.widget.TextView;
 
                 }
             });
+            buttonM.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i(TAG, "Button Clicked");
+                    BackgroundText.setText("Button  Clicked ");
+                    mphighF.seekTo(0);
+                    Log.e("SynthesizerActivity", "Button  clicked");
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mphighE.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpA.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpGsharp.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpG.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpC.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mphighG.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpA.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpGsharp.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpG.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpG.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpB.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpB.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mphighE.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpA.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpGsharp.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpG.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpD.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpF.start();
+                    delayPlaying(WHOLE_NOTE);
+                    mpG.start();
+
+                }
+            });
+
 
 
         }
