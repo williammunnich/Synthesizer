@@ -52,7 +52,6 @@ import android.widget.TextView;
         private MediaPlayer mphighF;
         private MediaPlayer mphighFsharp;
         private MediaPlayer mphighG;
-
         private void delayPlaying(int delay){
             try {
                 Thread.sleep(delay);
@@ -343,34 +342,8 @@ import android.widget.TextView;
                     BackgroundText.setText("Button  Clicked ");
                     mphighF.seekTo(0);
                     Log.e("SynthesizerActivity", "Button  clicked");
-                    mpD.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpD.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mphighE.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpA.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpA.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpG.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpF.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpF.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpD.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpF.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpG.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpC.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mpC.start();
-                    delayPlaying(WHOLE_NOTE);
-                    mphighE.start();
-                    delayPlaying(WHOLE_NOTE);
+                    MediaPlayer mPlayer = MediaPlayer.create(SynthesizerActivity.this, R.raw.megalovania);
+                    mPlayer.start();
                 }
             });
 
