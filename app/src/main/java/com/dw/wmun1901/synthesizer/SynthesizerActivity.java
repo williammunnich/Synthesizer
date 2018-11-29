@@ -343,7 +343,10 @@ import android.widget.TextView;
                     mphighF.seekTo(0);
                     Log.e("SynthesizerActivity", "Button  clicked");
                     MediaPlayer mPlayer = MediaPlayer.create(SynthesizerActivity.this, R.raw.megalovania);
+
                     mPlayer.start();
+                    delayPlaying(5000);
+                    mPlayer.stop(); 
                 }
             });
 
