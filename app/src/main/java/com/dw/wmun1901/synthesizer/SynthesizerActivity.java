@@ -23,6 +23,7 @@ import android.widget.TextView;
         private TextView BackgroundText; //BackgroundText
         private MediaPlayer mphighF;
         private MediaPlayer mphighFsharp;
+        private MediaPlayer robFinal;
 
         private void delayPlaying(int delay){
             try {
@@ -40,7 +41,7 @@ import android.widget.TextView;
             button17 = (Button) findViewById(R.id.button17);
             buttonM = (Button) findViewById(R.id.buttonM);
 
-
+            robFinal = MediaPlayer.create(this, R.raw.robfinal);
             mphighF = MediaPlayer.create(this, R.raw.scalehighf);
             mphighFsharp = MediaPlayer.create(this, R.raw.scalehighfs);
 
@@ -60,11 +61,9 @@ import android.widget.TextView;
                     BackgroundText.setText("Button  Clicked ");
                     mphighFsharp.seekTo(0);
                     Log.e("SynthesizerActivity", "Button  clicked");
-                    MediaPlayer rPlayer = MediaPlayer.create(SynthesizerActivity.this, R.raw.rob);
+                    MediaPlayer rPlayer = MediaPlayer.create(SynthesizerActivity.this, R.raw.robfinal);
 
                     rPlayer.start();
-                    delayPlaying(9000);
-                    rPlayer.stop();
 
                 }
             });
