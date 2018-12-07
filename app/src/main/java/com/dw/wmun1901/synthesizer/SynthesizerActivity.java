@@ -1,18 +1,15 @@
 package com.dw.wmun1901.synthesizer;
 
 import android.media.MediaPlayer;
-import android.provider.MediaStore;
-import android.provider.MediaStore.Audio;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import jm.music.data.Note;
-import jm.util.Play;
+
 
     public class SynthesizerActivity extends AppCompatActivity {
         private final int WHOLE_NOTE = 20;
